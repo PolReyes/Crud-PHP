@@ -2,7 +2,7 @@
 include_once './bd/mysql_libreria.php';
 $id = $_GET["id"];
 
-$sql = "SELECT * FROM user WHERE id = $id";
+$sql = "SELECT * FROM usuario WHERE id = $id";
 bd_connectar();
 $registros = bd_consultar($sql);
 $persona = $registros[0];

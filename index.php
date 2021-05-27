@@ -1,6 +1,6 @@
 <?php
 include_once './bd/mysql_libreria.php';
-$sql = "SELECT * FROM user WHERE account='activo'";
+$sql = "SELECT * FROM usuario WHERE account='activo'";
 bd_connectar();
 $registros = bd_consultar($sql);
 bd_desconectar();

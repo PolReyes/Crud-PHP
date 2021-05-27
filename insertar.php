@@ -9,7 +9,7 @@ $date = $_POST["date"];
 $phone = $_POST["phone"];
 
 
-$sql = "INSERT INTO user ( name,correo,date,phone,registered,account )";
+$sql = "INSERT INTO usuario ( name,correo,date,phone,registered,account )";
 $sql .= "values('$name','$correo','$date','$phone',CURRENT_TIMESTAMP,'activo')";
  bd_connectar();
 $exec = bd_ejecutar($sql);

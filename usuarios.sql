@@ -6,13 +6,13 @@ CREATE DATABASE IF NOT EXISTS usuarios DEFAULT CHARACTER SET = 'utf8' DEFAULT CO
 USE usuarios;
 
 -- -----------------------------------------------------
--- TABLE user
+-- TABLE usuario
 -- -----------------------------------------------------
 
 
-DROP TABLE IF EXISTS user;
+DROP TABLE IF EXISTS usuario;
 
-CREATE TABLE IF NOT EXISTS user(
+CREATE TABLE IF NOT EXISTS usuario(
   
 id int(11) NOT NULL AUTO_INCREMENT,
  
@@ -35,7 +35,7 @@ ENGINE=InnoDB;
 
 
 
-INSERT INTO user (id, name, correo, date, phone, registered, account) 
+INSERT INTO usuario (id, name, correo, date, phone, registered, account) 
 VALUES
 (1, 'Pol Reyes', 'pol@gmail.com', '2000-01-01', '123456789', '2021-02-18 11:12:05', 'activo'),
 (2, 'Wilmer', 'wilmer@gmail.com', '2021-02-12', '987654321','2021-02-18 12:48:42', 'activo');

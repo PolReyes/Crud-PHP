@@ -1,7 +1,7 @@
 <?php
 include_once './bd/mysql_libreria.php';
 
-$sql = "SELECT * FROM user";
+$sql = "SELECT * FROM usuario";
 bd_connectar();
 $registros = bd_consultar($sql);
 bd_desconectar();

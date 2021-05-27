@@ -6,7 +6,7 @@ $id = $_REQUEST['id'];
 
 
 
-$sql = "UPDATE user SET account='eliminado' WHERE id = $id";
+$sql = "UPDATE usuario SET account='eliminado' WHERE id = $id";
 
 bd_connectar();
 $exec = bd_ejecutar($sql);

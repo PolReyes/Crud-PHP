@@ -7,7 +7,7 @@ $correo = $_POST["correo"];
 $date = $_POST["date"];
 $phone = $_POST["phone"];
 
-$sql = "UPDATE user SET name = '$name', correo = '$correo', date = '$date', phone = '$phone' WHERE id = '$id'";
+$sql = "UPDATE usuario SET name = '$name', correo = '$correo', date = '$date', phone = '$phone' WHERE id = '$id'";
 
 bd_connectar();
 $exec = bd_ejecutar($sql);
